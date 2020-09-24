@@ -1,3 +1,4 @@
+// 처음생각한 
 function solution(participant, completion) {
     var answer = '';
     const duplicateName = participant.filter((item, pos) => {
