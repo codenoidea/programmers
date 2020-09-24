@@ -34,3 +34,19 @@ function solution(participant, completion) {
     }
     return answer;
 }
+
+// 3번째 생각한 - 정확성 통과/효율성 실패
+function solution(participant, completion) {
+    var answer = '';
+    completion.forEach(x => {
+        const idx = participant.indexOf(x);
+        participant.splice(idx, 1)
+    })
+
+
+    for(let r of participant) {
+        answer = r;
+    }
+
+    return answer;
+}
