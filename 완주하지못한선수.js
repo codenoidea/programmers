@@ -1,3 +1,5 @@
+// https://programmers.co.kr/learn/courses/30/lessons/42576?language=javascript#
+
 // 처음생각한 - 정확성/효율성 실패
 function solution(participant, completion) {
     var answer = '';
