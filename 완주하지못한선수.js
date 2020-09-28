@@ -50,3 +50,26 @@ function solution(participant, completion) {
 
     return answer;
 }
+
+// 이후 질문하기 보고 
+function solution(participant, completion) {
+    var answer = '';
+    var participants = participant.sort();
+    var completions = completion.sort();
+
+    for(let p=0; p < participant.length; p++) {
+      if (participants[p] !== completions[p]) {
+        if (participants[p-1] === participants[p]) {
+            answer = participants[p-1];
+            break;
+        } else {
+            answer = participants[p];
+            break;
+        }
+
+      }
+
+    }
+
+    return answer;
+}
